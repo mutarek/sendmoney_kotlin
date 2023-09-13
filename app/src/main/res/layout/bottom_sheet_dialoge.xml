@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:layout_margin="10dp"
+       android:orientation="vertical"
+       >
+
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="ব্যাংক নির্বাচন করুন"/>
+
+       <com.google.android.material.textfield.TextInputLayout
+           style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginStart="16dp"
+           android:layout_marginTop="16dp"
+           android:layout_marginEnd="16dp"
+           android:hint="ব্যাংক নাম"
+           app:hintTextColor="@color/black"
+           app:boxCornerRadiusBottomEnd="5dp"
+           app:boxCornerRadiusBottomStart="5dp"
+           app:boxCornerRadiusTopEnd="5dp"
+           app:boxCornerRadiusTopStart="5dp"
+           app:boxStrokeColor="#606268">
+
+           <com.google.android.material.textfield.TextInputEditText
+               android:id="@+id/typeBankNameET"
+               android:layout_width="match_parent"
+               android:drawableRight="@drawable/search_icon"
+               android:drawableTint="@color/black"
+               android:layout_height="52dp"
+               android:drawablePadding="20dp"
+               android:imeOptions="actionGo"
+               android:inputType="number"
+               android:textColor="#0F1117"
+               android:textSize="16sp" />
+
+       </com.google.android.material.textfield.TextInputLayout>
+
+       <androidx.recyclerview.widget.RecyclerView
+           android:id="@+id/bottomSheetRecyclerView"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           tools:listitem="@layout/saved_bank_layout"
+           tools:itemCount="4"/>
+
+   </LinearLayout>
+
+</ScrollView>

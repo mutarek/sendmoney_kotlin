@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".HomeActivity">
+
+        <androidx.appcompat.widget.Toolbar
+            android:elevation="5dp"
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center"
+            app:title="টাকা প্রেরণ"
+            android:textAlignment="center"
+            android:minHeight="?attr/actionBarSize">
+
+<!--            <ImageView-->
+<!--                android:layout_width="24dp"-->
+<!--                android:layout_height="24dp"-->
+<!--                android:src="@drawable/arrow_back"/>-->
+
+<!--            <Space-->
+<!--                android:layout_width="20dp"-->
+<!--                android:layout_height="match_parent"/>-->
+
+<!--            <TextView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="টাকা প্রেরণ"-->
+<!--                android:textSize="20sp" />-->
+
+        </androidx.appcompat.widget.Toolbar>
+
+    <com.google.android.material.divider.MaterialDivider
+        android:layout_width="match_parent"
+        android:layout_height="1.5dp"
+        app:dividerColor="@color/customGreyBorder"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ওয়ালেট টু ওয়ালেট"
+        android:textAlignment="center"
+        android:textColor="@color/primaryColor"
+        android:textSize="14sp" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:hint="প্রাপক"
+        app:boxCornerRadiusBottomEnd="5dp"
+        app:boxCornerRadiusBottomStart="5dp"
+        app:boxCornerRadiusTopEnd="5dp"
+        app:boxCornerRadiusTopStart="5dp"
+        app:boxStrokeColor="#606268">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/prapokETView"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:drawableRight="@drawable/contacts_book"
+            android:drawablePadding="20dp"
+            android:imeOptions="actionGo"
+            android:inputType="number"
+            android:textColor="#0F1117"
+            android:textSize="16sp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/kycOptionsLinear"
+        android:orientation="vertical"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="25dp"
+        android:gravity="center_horizontal"
+
+        >
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/addCardDetailsSaveBtn"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            app:cardElevation="2dp"
+            android:layout_marginTop="16dp"
+            android:layout_margin="8dp"
+            android:foreground="?attr/selectableItemBackground"
+            app:cardCornerRadius="10dp">
+            <TextView
+                android:id="@+id/btn_next"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/customGreyBorder"
+                android:gravity="center"
+                android:text="এগিয়ে যান"
+                android:textColor="@color/black"
+                android:textSize="16sp">
+            </TextView>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <LinearLayout
+        android:id="@+id/scanLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="122dp"
+        android:background="@color/primaryColor10Percent"
+        android:gravity="center"
+        android:padding="10dp">
+
+
+        <LinearLayout
+            android:layout_width="88dp"
+            android:layout_height="97dp"
+            android:background="@drawable/border"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_margin="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="7dp"
+                    android:src="@drawable/qr_scan" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="সম্প্রতি প্রেরণ"
+        android:textAlignment="viewStart"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recentSendItemsRecycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        tools:listitem="@layout/recent_send_items" />
+
+</LinearLayout>
