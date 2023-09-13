@@ -1,5 +1,6 @@
 package com.example.sendmoney
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -11,6 +12,7 @@ import com.example.myapplication.adapters.RecentSendItemsAdapter
 import com.example.myapplication.adapters.SavedBankAdapter
 import com.example.myapplication.model.RecentSendItemModel
 import com.example.sendmoney.databinding.FragmentSendMoneyBinding
+import com.example.sendmoney.fundtransfer.FundtransferReport
 import com.example.sendmoney.model.Saved_bank_model
 import com.google.android.material.bottomsheet.BottomSheetDialog
 
@@ -29,6 +31,10 @@ class FundTransferFragment : Fragment() {
 
         _binding!!.saveAccountBTN.setOnClickListener {
             openBottomSheet()
+        }
+
+        _binding!!.btnNext.setOnClickListener {
+            startActivity(Intent(activity?.application,FundtransferReport::class.java))
         }
 
         return binding.root

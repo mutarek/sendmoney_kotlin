@@ -13,6 +13,47 @@
         android:theme="@style/Theme.Sendmoney"
         tools:targetApi="31">
         <activity
+            android:name=".addmoney.mobile.MfsAddmoneyReportActivity"
+            android:exported="false" />
+        <activity
+            android:name=".addmoney.bank.BankAddMoneyReportActivity"
+            android:exported="false" />
+        <activity
+            android:name=".addmoney.card.CardAddMoneyReportActivity"
+            android:exported="false" />
+        <activity
+            android:name=".addmoney.mobile.MfsAddMoneyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".addmoney.bank.BankAddMoneyActivity"
+            android:exported="false"
+            android:label="@string/title_activity_bank_add_money"
+            android:theme="@style/Theme.Sendmoney" />
+        <activity
+            android:name=".addmoney.card.CardAddMoneyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".addmoney.bank.BanklistActivity"
+            android:exported="false" />
+        <activity
+            android:name=".addmoney.mobile.MfsListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".addmoney.card.CardListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".addmoney.AddMoneyHomeScreen"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".fundtransfer.FundTransferSuccess"
+            android:exported="false" />
+        <activity
             android:name=".fundtransfer.FundtransferReport"
             android:exported="false" />
         <activity

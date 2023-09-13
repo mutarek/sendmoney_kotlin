@@ -1,44 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:background="@color/backgroundColor"
-    tools:context=".fundtransfer.FundtransferReport">
+    tools:context=".addmoney.mobile.MfsAddmoneyReportActivity">
 
-    <com.google.android.material.appbar.AppBarLayout
-        android:id="@+id/appBarLayout"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
-        app:layout_constraintBottom_toTopOf="@+id/viewPager"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
+            android:layout_height="wrap_content"
             android:background="@color/white"
-            app:titleTextColor="@color/black"
-            app:title="ফান্ড ট্রান্সফার"
-            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+            android:elevation="5dp"
+            android:gravity="center"
+            android:minHeight="?attr/actionBarSize"
+            android:textAlignment="center"
+            app:title="অ্যাড মানি">
 
-        <com.google.android.material.divider.MaterialDivider
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            app:dividerColor="@color/customGreyDeep"/>
+            <!--            <ImageView-->
+            <!--                android:layout_width="24dp"-->
+            <!--                android:layout_height="24dp"-->
+            <!--                android:src="@drawable/arrow_back"/>-->
 
-    </com.google.android.material.appbar.AppBarLayout>
+            <!--            <Space-->
+            <!--                android:layout_width="20dp"-->
+            <!--                android:layout_height="match_parent"/>-->
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:background="@color/white">
+            <!--            <TextView-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:text="টাকা প্রেরণ"-->
+            <!--                android:textSize="20sp" />-->
+
+        </androidx.appcompat.widget.Toolbar>
 
         <Space
             android:layout_width="match_parent"
@@ -46,7 +45,7 @@
 
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
-            android:layout_height="496dp"
+            android:layout_height="wrap_content"
             android:layout_marginLeft="14dp"
             android:layout_marginRight="14dp"
             android:elevation="0dp"
@@ -98,7 +97,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="ব্যাংক নাম"
+                        android:text="একাউন্টের ধরণ"
                         android:textColor="@color/black"
                         android:textSize="14sp" />
 
@@ -106,7 +105,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="ব্র্যাক ব্যাংক লিমিটেড"
+                        android:text="বিকাশ"
                         android:textAlignment="textEnd"
                         android:textColor="@color/black"
                         android:textSize="14sp" />
@@ -133,7 +132,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="ব্যাংক নম্বর"
+                        android:text="একাউন্ট নম্বর"
                         android:textColor="@color/black"
                         android:textSize="14sp" />
 
@@ -141,44 +140,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="81234888"
-                        android:textAlignment="textEnd"
-                        android:textColor="@color/black"
-                        android:textSize="14sp"
-                        android:textStyle="bold" />
-
-                </LinearLayout>
-
-                <com.google.android.material.divider.MaterialDivider
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:layout_marginLeft="32dp"
-                    android:layout_marginRight="32dp" />
-
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:paddingLeft="32dp"
-                    android:paddingTop="10dp"
-                    android:paddingRight="32dp"
-                    android:paddingBottom="10dp"
-                    android:weightSum="2">
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="টাকার পরিমাণ"
-                        android:textColor="@color/black"
-                        android:textSize="14sp" />
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="৳500.00"
+                        android:text="1234567"
                         android:textAlignment="textEnd"
                         android:textColor="@color/black"
                         android:textSize="14sp"
@@ -192,6 +154,7 @@
                     android:layout_marginLeft="32dp"
                     android:layout_marginRight="32dp" />
 
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -206,7 +169,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="পয়েন্ট"
+                        android:text="উপাজিত পয়েন্ট"
                         android:textColor="@color/black"
                         android:textSize="14sp" />
 
@@ -228,41 +191,6 @@
                     android:layout_marginLeft="32dp"
                     android:layout_marginRight="32dp" />
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:paddingLeft="32dp"
-                    android:paddingTop="10dp"
-                    android:paddingRight="32dp"
-                    android:paddingBottom="10dp"
-                    android:weightSum="2">
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="সেবা ফি"
-                        android:textColor="@color/black"
-                        android:textSize="14sp" />
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="৳5.00"
-                        android:textAlignment="textEnd"
-                        android:textColor="@color/black"
-                        android:textSize="14sp"
-                        android:textStyle="bold" />
-
-                </LinearLayout>
-
-                <com.google.android.material.divider.MaterialDivider
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:layout_marginLeft="32dp"
-                    android:layout_marginRight="32dp" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -342,9 +270,9 @@
 
         <Space
             android:layout_width="match_parent"
-            android:layout_height="40dp" />
+            android:layout_height="10dp" />
+
 
     </LinearLayout>
 
-
-</LinearLayout>
+</ScrollView>
