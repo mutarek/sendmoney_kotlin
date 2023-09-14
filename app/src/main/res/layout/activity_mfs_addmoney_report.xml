@@ -39,15 +39,16 @@
 
         </androidx.appcompat.widget.Toolbar>
 
-        <Space
+        <View
             android:layout_width="match_parent"
-            android:layout_height="40dp" />
+            android:layout_height="@dimen/_33sdp"/>
+
 
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="14dp"
-            android:layout_marginRight="14dp"
+            android:layout_marginLeft="@dimen/_11sdp"
+            android:layout_marginRight="@dimen/_11sdp"
             android:elevation="0dp"
             app:cardCornerRadius="15dp">
 
@@ -58,7 +59,7 @@
 
                 <com.github.captain_miao.optroundcardview.OptRoundCardView
                     android:layout_width="match_parent"
-                    android:layout_height="48dp"
+                    android:layout_height="@dimen/_37sdp"
                     app:optRoundCardBackgroundColor="@color/primaryColor10Percent"
                     app:optRoundCardCornerRadius="15dp"
                     app:optRoundCardLeftBottomCorner="false"
@@ -74,58 +75,58 @@
                         android:text="বিবরণ"
                         android:textAlignment="center"
                         android:textColor="@color/primaryColor"
-                        android:textSize="14sp" />
+                        android:textSize="@dimen/_14sdp" />
 
 
                 </com.github.captain_miao.optroundcardview.OptRoundCardView>
 
-                <Space
+                <View
                     android:layout_width="match_parent"
-                    android:layout_height="40dp" />
+                    android:layout_height="@dimen/_33sdp"/>
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
-                    android:paddingLeft="32dp"
-                    android:paddingTop="10dp"
-                    android:paddingRight="32dp"
-                    android:paddingBottom="10dp"
+                    android:paddingLeft="@dimen/_25sdp"
+                    android:paddingTop="@dimen/_7sdp"
+                    android:paddingRight="@dimen/_25sdp"
+                    android:paddingBottom="@dimen/_7sdp"
                     android:weightSum="2">
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="একাউন্টের ধরণ"
+                        android:text="কার্ড-এর ধরণ"
                         android:textColor="@color/black"
-                        android:textSize="14sp" />
+                        android:textSize="@dimen/_11sdp" />
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="বিকাশ"
+                        android:text="মাস্টার কার্ড"
                         android:textAlignment="textEnd"
                         android:textColor="@color/black"
-                        android:textSize="14sp" />
+                        android:textSize="@dimen/_11sdp" />
 
                 </LinearLayout>
 
                 <com.google.android.material.divider.MaterialDivider
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
-                    android:layout_marginLeft="32dp"
-                    android:layout_marginRight="32dp" />
+                    android:layout_marginLeft="@dimen/_25sdp"
+                    android:layout_marginRight="@dimen/_25sdp" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
-                    android:paddingLeft="32dp"
-                    android:paddingTop="10dp"
-                    android:paddingRight="32dp"
-                    android:paddingBottom="10dp"
+                    android:paddingLeft="@dimen/_25sdp"
+                    android:paddingTop="@dimen/_7sdp"
+                    android:paddingRight="@dimen/_25sdp"
+                    android:paddingBottom="@dimen/_7sdp"
                     android:weightSum="2">
 
                     <TextView
@@ -134,7 +135,7 @@
                         android:layout_weight="1"
                         android:text="একাউন্ট নম্বর"
                         android:textColor="@color/black"
-                        android:textSize="14sp" />
+                        android:textSize="@dimen/_11sdp" />
 
                     <TextView
                         android:layout_width="match_parent"
@@ -143,7 +144,7 @@
                         android:text="1234567"
                         android:textAlignment="textEnd"
                         android:textColor="@color/black"
-                        android:textSize="14sp"
+                        android:textSize="@dimen/_11sdp"
                         android:textStyle="bold" />
 
                 </LinearLayout>
@@ -151,18 +152,18 @@
                 <com.google.android.material.divider.MaterialDivider
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
-                    android:layout_marginLeft="32dp"
-                    android:layout_marginRight="32dp" />
+                    android:layout_marginLeft="@dimen/_25sdp"
+                    android:layout_marginRight="@dimen/_25sdp" />
 
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
-                    android:paddingLeft="32dp"
-                    android:paddingTop="10dp"
-                    android:paddingRight="32dp"
-                    android:paddingBottom="10dp"
+                    android:paddingLeft="@dimen/_25sdp"
+                    android:paddingTop="@dimen/_7sdp"
+                    android:paddingRight="@dimen/_25sdp"
+                    android:paddingBottom="@dimen/_7sdp"
                     android:weightSum="2">
 
                     <TextView
@@ -171,7 +172,7 @@
                         android:layout_weight="1"
                         android:text="উপাজিত পয়েন্ট"
                         android:textColor="@color/black"
-                        android:textSize="14sp" />
+                        android:textSize="@dimen/_11sdp" />
 
                     <TextView
                         android:layout_width="match_parent"
@@ -180,7 +181,7 @@
                         android:text="200"
                         android:textAlignment="textEnd"
                         android:textColor="@color/black"
-                        android:textSize="14sp"
+                        android:textSize="@dimen/_11sdp"
                         android:textStyle="bold" />
 
                 </LinearLayout>
@@ -188,18 +189,18 @@
                 <com.google.android.material.divider.MaterialDivider
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
-                    android:layout_marginLeft="32dp"
-                    android:layout_marginRight="32dp" />
+                    android:layout_marginLeft="@dimen/_25sdp"
+                    android:layout_marginRight="@dimen/_25sdp" />
 
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
-                    android:paddingLeft="32dp"
-                    android:paddingTop="10dp"
-                    android:paddingRight="32dp"
-                    android:paddingBottom="10dp"
+                    android:paddingLeft="@dimen/_25sdp"
+                    android:paddingTop="@dimen/_7sdp"
+                    android:paddingRight="@dimen/_25sdp"
+                    android:paddingBottom="@dimen/_7sdp"
                     android:weightSum="2">
 
                     <TextView
@@ -208,7 +209,7 @@
                         android:layout_weight="1"
                         android:text="সর্বমোট পরিমান"
                         android:textColor="@color/black"
-                        android:textSize="14sp" />
+                        android:textSize="@dimen/_11sdp" />
 
                     <TextView
                         android:layout_width="match_parent"
@@ -217,21 +218,21 @@
                         android:text="৳505.00"
                         android:textAlignment="textEnd"
                         android:textColor="@color/black"
-                        android:textSize="14sp"
+                        android:textSize="@dimen/_11sdp"
                         android:textStyle="bold" />
 
                 </LinearLayout>
 
-                <Space
+                <View
                     android:layout_width="match_parent"
-                    android:layout_height="40dp" />
+                    android:layout_height="@dimen/_25sdp" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginHorizontal="10dp"
-                    android:layout_marginTop="25dp"
-                    android:layout_marginBottom="25dp"
+                    android:layout_marginHorizontal="@dimen/_7sdp"
+                    android:layout_marginTop="@dimen/_22sdp"
+                    android:layout_marginBottom="@dimen/_22sdp"
                     android:gravity="center_horizontal"
                     android:orientation="vertical"
                     app:layout_constraintLeft_toLeftOf="parent"
@@ -241,13 +242,13 @@
                     >
 
                     <androidx.cardview.widget.CardView
-                        android:id="@+id/btnNext"
+                        android:id="@+id/taka_pathanBTN"
                         android:layout_width="match_parent"
-                        android:layout_height="58dp"
-                        android:layout_margin="8dp"
-                        android:layout_marginTop="16dp"
+                        android:layout_height="@dimen/_45sdp"
+                        android:layout_margin="@dimen/_5sdp"
+                        android:layout_marginTop="@dimen/_13sdp"
                         android:foreground="?attr/selectableItemBackground"
-                        app:cardCornerRadius="10dp"
+                        app:cardCornerRadius="@dimen/_7sdp"
                         app:cardElevation="2dp">
 
                         <TextView
@@ -256,9 +257,9 @@
                             android:layout_height="match_parent"
                             android:background="@color/primaryColor"
                             android:gravity="center"
-                            android:text="এগিয়ে যান"
+                            android:text="টাকা পাঠান"
                             android:textColor="@color/white"
-                            android:textSize="16sp" />
+                            android:textSize="@dimen/_13sdp" />
                     </androidx.cardview.widget.CardView>
 
                 </LinearLayout>
@@ -268,9 +269,9 @@
 
         </androidx.cardview.widget.CardView>
 
-        <Space
+        <View
             android:layout_width="match_parent"
-            android:layout_height="10dp" />
+            android:layout_height="@dimen/_7sdp" />
 
 
     </LinearLayout>
