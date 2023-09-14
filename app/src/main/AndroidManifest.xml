@@ -13,6 +13,11 @@
         android:theme="@style/Theme.Sendmoney"
         tools:targetApi="31">
         <activity
+            android:name=".topup.TopupHomeActivity"
+            android:exported="true" >
+
+        </activity>
+        <activity
             android:name=".addmoney.mobile.MfsAddmoneyReportActivity"
             android:exported="false" />
         <activity
@@ -62,22 +67,12 @@
         <activity
             android:name=".fundtransfer.FundTransferActivity"
             android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name=".fundTransfer.FundTransferActivity"
             android:exported="true"
             android:label="@string/title_activity_fund_transfer"
             android:theme="@style/Theme.Sendmoney.NoActionBar">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name=".smoney.SendMoneySuccess"
@@ -96,22 +91,12 @@
             android:exported="true"
             android:label="@string/title_activity_home"
             android:theme="@style/Theme.Sendmoney">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name=".MainActivity"
             android:exported="true"
             android:label="@string/app_name"
             android:theme="@style/Theme.Sendmoney">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
     </application>
 
