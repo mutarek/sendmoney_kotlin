@@ -9,4 +9,6 @@
     <color name="primaryColor10Percent">#1A39B54A</color>
     <color name="optionalTextColor">#C4C4C4</color>
     <color name="backgroundColor">#F2F2F2</color>
+    <color name="gp_color">#F4F4F4</color>
+    <color name="rb_color">#F8FCFF</color>
 </resources>

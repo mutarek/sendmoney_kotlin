@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -13,9 +16,19 @@
         android:theme="@style/Theme.Sendmoney"
         tools:targetApi="31">
         <activity
+            android:name=".topup.TopUpSumaryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".topup.TopupRechargeActivity"
+            android:exported="false" />
+        <activity
             android:name=".topup.TopupHomeActivity"
-            android:exported="true" >
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity
             android:name=".addmoney.mobile.MfsAddmoneyReportActivity"
@@ -48,13 +61,7 @@
             android:exported="false" />
         <activity
             android:name=".addmoney.AddMoneyHomeScreen"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:exported="true" />
         <activity
             android:name=".fundtransfer.FundTransferSuccess"
             android:exported="false" />
@@ -66,14 +73,12 @@
             android:exported="false" />
         <activity
             android:name=".fundtransfer.FundTransferActivity"
-            android:exported="true">
-        </activity>
+            android:exported="true" />
         <activity
             android:name=".fundTransfer.FundTransferActivity"
             android:exported="true"
             android:label="@string/title_activity_fund_transfer"
-            android:theme="@style/Theme.Sendmoney.NoActionBar">
-        </activity>
+            android:theme="@style/Theme.Sendmoney.NoActionBar" />
         <activity
             android:name=".smoney.SendMoneySuccess"
             android:exported="false" />
@@ -90,14 +95,12 @@
             android:name=".HomeActivity"
             android:exported="true"
             android:label="@string/title_activity_home"
-            android:theme="@style/Theme.Sendmoney">
-        </activity>
+            android:theme="@style/Theme.Sendmoney" />
         <activity
             android:name=".MainActivity"
             android:exported="true"
             android:label="@string/app_name"
-            android:theme="@style/Theme.Sendmoney">
-        </activity>
+            android:theme="@style/Theme.Sendmoney" />
     </application>
 
 </manifest>

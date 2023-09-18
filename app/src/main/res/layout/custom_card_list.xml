@@ -35,19 +35,11 @@
                 android:id="@+id/cardName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="School Payment"
+                android:text="Nagad"
                 android:textAlignment="viewStart"
                 android:textColor="@color/black"
                 android:textSize="@dimen/_11sdp" />
 
-            <TextView
-                android:id="@+id/cardNumber"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Visa/Mastercard -xxxx 1234"
-                android:textAlignment="viewStart"
-                android:textColor="@color/black"
-                android:textSize="@dimen/_10sdp" />
 
         </LinearLayout>
 
