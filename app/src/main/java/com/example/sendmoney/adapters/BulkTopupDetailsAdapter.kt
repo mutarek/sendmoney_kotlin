@@ -9,8 +9,8 @@ import com.example.sendmoney.model.BulkTopupModel
 import com.example.sendmoney.model.OfferModel
 import com.example.sendmoney.model.OperatorModel
 
-class BulkTopupAdapter(private val dataList: ArrayList<BulkTopupModel>) :
-    RecyclerView.Adapter<BulkTopupAdapter.CustomViewHolder>() {
+class BulkTopupDetailsAdapter(private val dataList: ArrayList<BulkTopupModel>) :
+    RecyclerView.Adapter<BulkTopupDetailsAdapter.CustomViewHolder>() {
     private var mOnClickListener: OnClickListener? = null
 
     class CustomViewHolder(itemview: View) : RecyclerView.ViewHolder(itemview) {
@@ -22,7 +22,8 @@ class BulkTopupAdapter(private val dataList: ArrayList<BulkTopupModel>) :
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CustomViewHolder {
         val item =
-            LayoutInflater.from(parent.context).inflate(R.layout.bulk_topup_layout, parent, false)
+            LayoutInflater.from(parent.context)
+                .inflate(R.layout.bulk_top_up_details_layout, parent, false)
         return CustomViewHolder(item)
     }
 
@@ -36,11 +37,7 @@ class BulkTopupAdapter(private val dataList: ArrayList<BulkTopupModel>) :
         } else
             holder.ammount.text = dataList[position].amount
         holder.number.text = dataList[position].number
-        holder.delete.setOnClickListener {
-            if (mOnClickListener != null) {
-                mOnClickListener!!.onClick(position, dataList[position])
-            }
-        }
+
     }
 
     fun setOnClickListener(onClickListener: OnClickListener) {

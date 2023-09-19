@@ -16,14 +16,11 @@
         android:theme="@style/Theme.Sendmoney"
         tools:targetApi="31">
         <activity
+            android:name=".topup.BulkTopupDetails"
+            android:exported="false" />
+        <activity
             android:name=".addmoney.mobile.AddMoneySuccessActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:exported="true"></activity>
         <activity
             android:name=".topup.BulkTopUpActivity"
             android:exported="false" />

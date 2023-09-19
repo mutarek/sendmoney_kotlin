@@ -45,12 +45,10 @@ class OperatorAdapter(private val dataList: ArrayList<OperatorModel>) :
 
         holder.radio.setOnClickListener {
             mSelectedItem = holder.adapterPosition
-            notifyDataSetChanged()
-        }
-        holder.itemView.setOnClickListener {
             if (mOnClickListener != null) {
                 mOnClickListener!!.onClick(position, dataList[position])
             }
+            notifyDataSetChanged()
         }
     }
 
