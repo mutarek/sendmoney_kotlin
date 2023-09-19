@@ -30,6 +30,7 @@
                 layout="@layout/toolbar_topup"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/_10sdp"
                 android:layout_gravity="end" />
 
         </androidx.appcompat.widget.Toolbar>
@@ -118,6 +119,7 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/goToBulkTopUp"
                 android:layout_width="@dimen/_48sdp"
                 android:layout_height="@dimen/_43sdp"
                 android:layout_margin="@dimen/_5sdp"

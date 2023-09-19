@@ -47,6 +47,11 @@ class OperatorAdapter(private val dataList: ArrayList<OperatorModel>) :
             mSelectedItem = holder.adapterPosition
             notifyDataSetChanged()
         }
+        holder.itemView.setOnClickListener {
+            if (mOnClickListener != null) {
+                mOnClickListener!!.onClick(position, dataList[position])
+            }
+        }
     }
 
     fun setOnClickListener(onClickListener: OnClickListener) {

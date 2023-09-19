@@ -45,6 +45,10 @@ class TopupHomeActivity : AppCompatActivity(), EasyPermissions.PermissionCallbac
             getContactc()
         }
 
+        binding.goToBulkTopUp.setOnClickListener {
+            startActivity(Intent(this@TopupHomeActivity, BulkTopUpActivity::class.java))
+        }
+
 
     }
 
@@ -65,7 +69,7 @@ class TopupHomeActivity : AppCompatActivity(), EasyPermissions.PermissionCallbac
         }
 
         btnNext.setOnClickListener {
-            startActivity(Intent(this,TopupRechargeActivity::class.java))
+            startActivity(Intent(this, TopupRechargeActivity::class.java))
         }
 
         recyclerView.apply {

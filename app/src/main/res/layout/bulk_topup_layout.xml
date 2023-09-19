@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/_7sdp"
+    android:layout_marginTop="@dimen/_5sdp"
+    android:layout_marginRight="@dimen/_7sdp"
+    android:layout_marginBottom="@dimen/_5sdp"
+    app:cardCornerRadius="@dimen/_5sdp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/contactOperatorIMG"
+            android:layout_width="@dimen/_35sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:src="@drawable/grameen_logo" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_9sdp"
+                android:text="Jakir" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/contactNumberTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_9sdp"
+                    android:text="01733309420"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="@dimen/_10sdp"
+                    android:layout_height="match_parent" />
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="@dimen/_62sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    app:cardCornerRadius="5dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/primaryColor10Percent"
+                        android:gravity="center"
+                        android:text="প্রিপেইড"
+                        android:textColor="#0547AA" />
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_9sdp"
+                android:text="এমাউন্ট" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/contactAmmountTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_9sdp"
+                    android:text="20"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="@dimen/_5sdp"
+            android:layout_height="match_parent"/>
+
+        <ImageView
+            android:layout_gravity="center"
+            android:id="@+id/deleteContact"
+            android:layout_width="@dimen/_22sdp"
+            android:layout_height="@dimen/_22sdp"
+            android:src="@drawable/delete_logo" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
