@@ -18,6 +18,7 @@ class BulkTopupDetailsAdapter(private val dataList: ArrayList<BulkTopupModel>) :
         val number = itemview.findViewById<TextView>(R.id.contactNumberTV)
         val delete = itemview.findViewById<ImageView>(R.id.deleteContact)
         val operator = itemview.findViewById<ImageView>(R.id.contactOperatorIMG)
+        val type = itemview.findViewById<TextView>(R.id.rechargeType)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CustomViewHolder {
@@ -37,6 +38,7 @@ class BulkTopupDetailsAdapter(private val dataList: ArrayList<BulkTopupModel>) :
         } else
             holder.ammount.text = dataList[position].amount
         holder.number.text = dataList[position].number
+        holder.type.text = dataList[position].type
 
     }
 

@@ -3,12 +3,15 @@ package com.example.sendmoney.topup
 import BulkTopupAdapter
 import OperatorAdapter
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.widget.ImageView
 import android.widget.LinearLayout
+import android.widget.RadioButton
+import android.widget.RadioGroup
 import android.widget.TextView
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import androidx.cardview.widget.CardView
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -18,7 +21,7 @@ import com.example.sendmoney.model.BulkTopupModel
 import com.example.sendmoney.model.OperatorModel
 import com.google.android.material.bottomsheet.BottomSheetDialog
 import com.google.android.material.textfield.TextInputEditText
-import com.google.android.material.textfield.TextInputLayout
+
 
 class BulkTopUpActivity : AppCompatActivity() {
     private lateinit var opeator: TextView
@@ -32,6 +35,7 @@ class BulkTopUpActivity : AppCompatActivity() {
     private lateinit var amount: TextInputEditText
     private lateinit var recyclerView: RecyclerView
     private lateinit var nextBTN: CardView
+    private var radio: String = ""
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_bulk_top_up)
@@ -54,14 +58,12 @@ class BulkTopUpActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-//        operatorLayout.setOnClickListener {
-//            openBottomSheet()
-//        }
         addToTopUpList.setOnClickListener {
             val model = BulkTopupModel(
                 number.text.toString(),
                 opeator.text.toString(),
                 amount.text.toString(),
+                radio,
                 R.drawable.gp_icon
             )
             dataList.add(0, model)
@@ -96,10 +98,21 @@ class BulkTopUpActivity : AppCompatActivity() {
         val view = layoutInflater.inflate(R.layout.bottom_sheet_for_operator, null)
         var recyclerView = view.findViewById<RecyclerView>(R.id.operatorRecyllerView)
         var btnNext = view.findViewById<CardView>(R.id.nextBtn)
+        var radioGroup = view.findViewById<RadioGroup>(R.id.radioGroup)
         dialog.setCancelable(true)
         dialog.setContentView(view)
         dialog.show()
+
         btnNext.setOnClickListener {
+//            val selectedRadioButtonId = radioGroup.checkedRadioButtonId
+//            if (selectedRadioButtonId != -1) {
+//                val selectedRadioButton: RadioButton = findViewById(selectedRadioButtonId)
+//                val text = selectedRadioButton.text.toString()
+//                radio = text
+//                Toast.makeText(this, radio, Toast.LENGTH_SHORT).show()
+//            } else {
+//                Toast.makeText(this, "Please select", Toast.LENGTH_SHORT).show()
+//            }
             if (dialog.isShowing()) {
                 dialog.dismiss();
             } else {

@@ -46,6 +46,7 @@
             android:orientation="horizontal">
 
             <RadioGroup
+                android:id="@+id/radioGroup"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
@@ -53,32 +54,35 @@
 
 
                 <RadioButton
+                    android:id="@+id/prepaid"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_margin="@dimen/_3sdp"
                     android:background="@drawable/rounded_border"
                     android:buttonTint="@color/primaryColor"
                     android:padding="@dimen/_5sdp"
-                    android:text="Postpaid" />
+                    android:text="প্রিপেইড" />
 
 
                 <RadioButton
+                    android:id="@+id/postpaid"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_margin="@dimen/_3sdp"
                     android:background="@drawable/rounded_border"
                     android:buttonTint="@color/primaryColor"
                     android:padding="@dimen/_5sdp"
-                    android:text="Prepaid" />
+                    android:text="পোস্টপেইড" />
 
                 <RadioButton
+                    android:id="@+id/skitto"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_margin="@dimen/_3sdp"
                     android:background="@drawable/rounded_border"
                     android:buttonTint="@color/primaryColor"
                     android:padding="@dimen/_5sdp"
-                    android:text="Skitto" />
+                    android:text="স্কিটো" />
 
 
             </RadioGroup>
