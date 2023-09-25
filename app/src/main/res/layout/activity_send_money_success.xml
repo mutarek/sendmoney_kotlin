@@ -39,19 +39,19 @@
 
         </androidx.appcompat.widget.Toolbar>
 
-        <Space
+        <View
             android:layout_width="match_parent"
-            android:layout_height="20dp" />
+            android:layout_height="@dimen/_15sdp" />
 
         <ImageView
-            android:layout_width="134dp"
-            android:layout_height="134dp"
+            android:layout_width="@dimen/_120sdp"
+            android:layout_height="@dimen/_120sdp"
             android:layout_gravity="center"
             android:src="@drawable/succes_icon" />
 
-        <Space
+        <View
             android:layout_width="match_parent"
-            android:layout_height="40dp" />
+            android:layout_height="30sp" />
 
         <TextView
             android:layout_width="match_parent"
@@ -61,9 +61,9 @@
             android:textColor="@color/primaryColor"
             android:textSize="20sp" />
 
-        <Space
+        <View
             android:layout_width="match_parent"
-            android:layout_height="20dp" />
+            android:layout_height="@dimen/_15sdp" />
 
         <TextView
             android:layout_width="match_parent"
@@ -73,9 +73,9 @@
             android:textColor="@color/black"
             android:textSize="14sp" />
 
-        <Space
+        <View
             android:layout_width="match_parent"
-            android:layout_height="5dp" />
+            android:layout_height="@dimen/_3sdp" />
 
         <TextView
             android:id="@+id/transcationID"
@@ -90,20 +90,20 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="16dp"
+            android:layout_margin="@dimen/_12sdp"
             android:background="@drawable/custom_card_bg"
             android:orientation="vertical"
-            android:padding="16dp">
+            android:padding="@dimen/_12sdp">
 
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:paddingLeft="32dp"
-                android:paddingTop="10dp"
-                android:paddingRight="32dp"
-                android:paddingBottom="10dp"
+                android:paddingLeft="@dimen/_25sdp"
+                android:paddingTop="@dimen/_7sdp"
+                android:paddingRight="@dimen/_25sdp"
+                android:paddingBottom="@dimen/_7sdp"
                 android:weightSum="2">
 
                 <TextView
@@ -129,17 +129,17 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:paddingLeft="32dp"
-                android:paddingTop="2dp"
-                android:paddingRight="32dp"
-                android:paddingBottom="10dp"
+                android:paddingLeft="@dimen/_25sdp"
+                android:paddingTop="@dimen/_7sdp"
+                android:paddingRight="@dimen/_25sdp"
+                android:paddingBottom="@dimen/_7sdp"
                 android:weightSum="2">
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="12 Aug, 2023,  4:00 PM"
+                    android:text="12 Aug, 2023,4:00 PM"
                     android:textColor="@color/black"
                     android:textSize="14sp"
                     android:textStyle="bold" />
@@ -159,18 +159,18 @@
             <com.google.android.material.divider.MaterialDivider
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
-                android:layout_marginLeft="32dp"
-                android:layout_marginRight="32dp"
+                android:layout_marginLeft="@dimen/_25sdp"
+                android:layout_marginRight="@dimen/_25sdp"
                 app:dividerColor="@color/customGreyBorder" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:paddingLeft="32dp"
-                android:paddingTop="10dp"
-                android:paddingRight="32dp"
-                android:paddingBottom="10dp"
+                android:paddingLeft="@dimen/_25sdp"
+                android:paddingTop="@dimen/_7sdp"
+                android:paddingRight="@dimen/_25sdp"
+                android:paddingBottom="@dimen/_7sdp"
                 android:weightSum="2">
 
                 <TextView
@@ -196,10 +196,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:paddingLeft="32dp"
-                android:paddingTop="2dp"
-                android:paddingRight="32dp"
-                android:paddingBottom="10dp"
+                android:paddingLeft="@dimen/_25sdp"
+                android:paddingTop="@dimen/_1sdp"
+                android:paddingRight="@dimen/_25sdp"
+                android:paddingBottom="@dimen/_7sdp"
                 android:weightSum="2">
 
                 <TextView
@@ -225,18 +225,18 @@
             <com.google.android.material.divider.MaterialDivider
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
-                android:layout_marginLeft="32dp"
-                android:layout_marginRight="32dp"
+                android:layout_marginLeft="@dimen/_25sdp"
+                android:layout_marginRight="@dimen/_25sdp"
                 app:dividerColor="@color/customGreyBorder" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:paddingLeft="32dp"
-                android:paddingTop="10dp"
-                android:paddingRight="32dp"
-                android:paddingBottom="10dp"
+                android:paddingLeft="@dimen/_25sdp"
+                android:paddingTop="@dimen/_7sdp"
+                android:paddingRight="@dimen/_25sdp"
+                android:paddingBottom="@dimen/_7sdp"
                 android:weightSum="2">
 
                 <TextView
@@ -262,10 +262,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:paddingLeft="32dp"
-                android:paddingTop="2dp"
-                android:paddingRight="32dp"
-                android:paddingBottom="10dp"
+                android:paddingLeft="@dimen/_25sdp"
+                android:paddingTop="@dimen/_1sdp"
+                android:paddingRight="@dimen/_25sdp"
+                android:paddingBottom="@dimen/_7sdp"
                 android:weightSum="2">
 
                 <TextView
@@ -293,12 +293,12 @@
         </LinearLayout>
 
         <androidx.cardview.widget.CardView
-            android:layout_width="250dp"
-            android:layout_height="42dp"
+            android:layout_width="@dimen/_200sdp"
+            android:layout_height="@dimen/_35sdp"
             android:layout_gravity="center"
-            android:layout_marginLeft="32dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginRight="32dp"
+            android:layout_marginLeft="@dimen/_25sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginRight="@dimen/_25sdp"
             app:cardCornerRadius="5dp">
 
             <LinearLayout
@@ -307,12 +307,12 @@
                 android:background="@color/primaryColor10Percent"
                 android:orientation="horizontal"
 
-                android:paddingLeft="20dp"
-                android:paddingRight="20dp">
+                android:paddingLeft="@dimen/_15sdp"
+                android:paddingRight="@dimen/_15sdp">
 
                 <ImageView
-                    android:layout_width="22dp"
-                    android:layout_height="22dp"
+                    android:layout_width="@dimen/_18sdp"
+                    android:layout_height="@dimen/_18sdp"
                     android:layout_gravity="center"
                     android:src="@drawable/tips_icon" />
 
@@ -330,15 +330,15 @@
 
         </androidx.cardview.widget.CardView>
 
-        <Space
+        <View
             android:layout_width="match_parent"
-            android:layout_height="40dp" />
+            android:layout_height="@dimen/_30sdp" />
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="40dp"
+            android:layout_height="@dimen/_35sdp"
             android:layout_gravity="center"
-            android:layout_margin="12dp"
+            android:layout_margin="@dimen/_9sdp"
             android:orientation="horizontal"
             android:weightSum="2">
 
@@ -350,7 +350,7 @@
                 android:gravity="center">
 
                 <androidx.cardview.widget.CardView
-                    android:layout_width="130dp"
+                    android:layout_width="@dimen/_110sdp"
                     android:layout_height="match_parent"
                     app:cardBackgroundColor="@color/white"
                     app:cardCornerRadius="5dp">
@@ -361,12 +361,12 @@
                         android:layout_gravity="center"
                         android:gravity="center"
                         android:orientation="horizontal"
-                        android:padding="10dp"
+                        android:padding="@dimen/_7sdp"
                         android:weightSum="2">
 
                         <ImageView
-                            android:layout_width="19dp"
-                            android:layout_height="19dp"
+                            android:layout_width="@dimen/_15sdp"
+                            android:layout_height="@dimen/_15sdp"
                             android:layout_weight="1"
                             android:src="@drawable/fav_icon" />
 
@@ -391,7 +391,7 @@
                 android:layout_weight="1">
 
                 <androidx.cardview.widget.CardView
-                    android:layout_width="130dp"
+                    android:layout_width="@dimen/_110sdp"
                     android:layout_height="match_parent"
                     app:cardBackgroundColor="@color/white"
                     app:cardCornerRadius="5dp">
@@ -401,12 +401,12 @@
                         android:layout_height="match_parent"
                         android:gravity="center"
                         android:orientation="horizontal"
-                        android:padding="10dp"
+                        android:padding="@dimen/_7sdp"
                         android:weightSum="2">
 
                         <ImageView
-                            android:layout_width="19dp"
-                            android:layout_height="19dp"
+                            android:layout_width="@dimen/_15sdp"
+                            android:layout_height="@dimen/_15sdp"
                             android:layout_weight="1"
                             android:src="@drawable/download_icon" />
 
@@ -427,16 +427,16 @@
 
         </LinearLayout>
 
-        <Space
+        <View
             android:layout_width="match_parent"
-            android:layout_height="40dp" />
+            android:layout_height="@dimen/_30sdp" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginHorizontal="10dp"
-            android:layout_marginTop="25dp"
-            android:layout_marginBottom="25dp"
+            android:layout_marginHorizontal="@dimen/_7sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginBottom="@dimen/_20sdp"
             android:gravity="center_horizontal"
             android:orientation="vertical"
             app:layout_constraintLeft_toLeftOf="parent"
@@ -448,9 +448,9 @@
             <androidx.cardview.widget.CardView
                 android:id="@+id/btnNext"
                 android:layout_width="match_parent"
-                android:layout_height="58dp"
-                android:layout_margin="8dp"
-                android:layout_marginTop="16dp"
+                android:layout_height="@dimen/_48sdp"
+                android:layout_margin="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_12sdp"
                 android:foreground="?attr/selectableItemBackground"
                 app:cardCornerRadius="10dp"
                 app:cardElevation="2dp">
