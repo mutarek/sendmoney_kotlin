@@ -19,11 +19,6 @@
             android:name=".StateMentActivity"
             android:exported="true">
 
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name=".home.MainActivity"
@@ -111,7 +106,15 @@
             android:name=".HomeActivity"
             android:exported="true"
             android:label="@string/title_activity_home"
-            android:theme="@style/Theme.Sendmoney" />
+            android:theme="@style/Theme.Sendmoney" >
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
         <activity
             android:name=".MainActivity"
             android:exported="true"
