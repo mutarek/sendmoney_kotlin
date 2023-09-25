@@ -16,14 +16,18 @@
         android:theme="@style/Theme.Sendmoney"
         tools:targetApi="31">
         <activity
-            android:name=".home.MainActivity"
+            android:name=".StateMentActivity"
             android:exported="true">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".home.MainActivity"
+            android:exported="true"></activity>
         <activity
             android:name=".topup.BulkTopupDetails"
             android:exported="false" />
@@ -41,8 +45,7 @@
             android:exported="false" />
         <activity
             android:name=".topup.TopupHomeActivity"
-            android:exported="true">
-        </activity>
+            android:exported="true" />
         <activity
             android:name=".addmoney.mobile.MfsAddmoneyReportActivity"
             android:exported="false" />
