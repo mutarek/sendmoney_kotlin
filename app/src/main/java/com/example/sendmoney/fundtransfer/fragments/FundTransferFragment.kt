@@ -1,4 +1,4 @@
-package com.example.sendmoney
+package com.example.sendmoney.fundtransfer.fragments
 
 import android.content.Intent
 import android.os.Bundle
@@ -8,9 +8,8 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.example.myapplication.adapters.RecentSendItemsAdapter
 import com.example.myapplication.adapters.SavedBankAdapter
-import com.example.myapplication.model.RecentSendItemModel
+import com.example.sendmoney.R
 import com.example.sendmoney.databinding.FragmentSendMoneyBinding
 import com.example.sendmoney.fundtransfer.FundtransferReport
 import com.example.sendmoney.model.Saved_bank_model

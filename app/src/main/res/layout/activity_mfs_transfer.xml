@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fundtransfer.MfsTransferActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appBarLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:layout_constraintBottom_toTopOf="@+id/viewPager"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/white"
+                app:titleTextColor="@color/black"
+                app:title="ফান্ড ট্রান্সফার"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+            <com.google.android.material.divider.MaterialDivider
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                app:dividerColor="@color/customGreyDeep"/>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_2sdp"
+            android:background="@color/backgroundColor"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_70sdp"
+            android:background="@color/white">
+
+
+            <LinearLayout
+                android:id="@+id/bankToShebaPay"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="@dimen/_14sdp"
+                android:layout_marginRight="@dimen/_14sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginBottom="@dimen/_8sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:background="@drawable/saved_bank_shape">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="5">
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/_25sdp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:src="@drawable/nagad_icon" />
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/cardName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Nagad"
+                            android:textAlignment="viewStart"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_13sdp" />
+
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_5sdp"
+            android:background="@color/backgroundColor"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:layout_marginEnd="@dimen/_12sdp"
+                android:hint="রিসিভার নাম্বার"
+                app:boxCornerRadiusBottomEnd="@dimen/_3sdp"
+                app:boxCornerRadiusBottomStart="@dimen/_3sdp"
+                app:boxCornerRadiusTopEnd="@dimen/_3sdp"
+                app:boxCornerRadiusTopStart="@dimen/_3sdp"
+                app:boxStrokeColor="#606268">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/reciverNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_45sdp"
+                    android:drawablePadding="@dimen/_17sdp"
+                    android:imeOptions="actionGo"
+                    android:inputType="number"
+                    android:textColor="#0F1117"
+                    android:textSize="@dimen/_13sdp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_5sdp"
+                />
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:layout_marginEnd="@dimen/_12sdp"
+                android:hint="টাকার পরিমান"
+                app:boxCornerRadiusBottomEnd="@dimen/_3sdp"
+                app:boxCornerRadiusBottomStart="@dimen/_3sdp"
+                app:boxCornerRadiusTopEnd="@dimen/_3sdp"
+                app:boxCornerRadiusTopStart="@dimen/_3sdp"
+                app:boxStrokeColor="#606268">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/amountET"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_45sdp"
+                    android:drawableLeft="@drawable/taka_sign"
+                    android:drawablePadding="@dimen/_17sdp"
+                    android:imeOptions="actionGo"
+                    android:inputType="number"
+                    android:textColor="#0F1117"
+                    android:textSize="@dimen/_13sdp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_5sdp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="বর্তমান ব্যালান্স : ৳ 0.00"
+                android:layout_marginLeft="@dimen/_13sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginBottom="@dimen/_13sdp"/>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/kycOptionsLinear"
+
+                >
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/taka_pathanBTN"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_49sdp"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_13sdp"
+                    android:foreground="?attr/selectableItemBackground"
+                    app:cardCornerRadius="@dimen/_8sdp"
+                    app:cardElevation="2dp">
+
+                    <TextView
+                        android:id="@+id/btn_next"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/primaryColor"
+                        android:gravity="center"
+                        android:text="টাকা পাঠান"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_14sdp" />
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</ScrollView>

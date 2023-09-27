@@ -5,9 +5,9 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.appcompat.widget.Toolbar
 import androidx.viewpager.widget.ViewPager
-import com.example.sendmoney.FundTransferFragment
-import com.example.sendmoney.R
+import com.example.sendmoney.fundtransfer.fragments.FundTransferFragment
 import com.example.sendmoney.databinding.ActivityFundTransfer2Binding
+import com.example.sendmoney.fundtransfer.fragments.MfsFragment
 import com.google.android.material.tabs.TabLayout
 
 class FundTransferActivity : AppCompatActivity() {
@@ -28,7 +28,7 @@ class FundTransferActivity : AppCompatActivity() {
         val adapter = ViewPagerAdapter(supportFragmentManager)
 
         adapter.addFragment(FundTransferFragment(), "সেবা পে টু ব্যাংক")
-        adapter.addFragment(FundTransferFragment(), "")
+        adapter.addFragment(MfsFragment(), "সেবা পে টু MFS")
         adapter.addFragment(FundTransferFragment(), "")
 
         pager.adapter = adapter

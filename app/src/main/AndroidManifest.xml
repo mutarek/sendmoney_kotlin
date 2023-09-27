@@ -16,13 +16,17 @@
         android:theme="@style/Theme.Sendmoney"
         tools:targetApi="31">
         <activity
+            android:name=".fundtransfer.MfsSuccessActivity"
+            android:exported="false" />
+        <activity
+            android:name=".fundtransfer.MfsTransferActivity"
+            android:exported="false" />
+        <activity
             android:name=".StateMentActivity"
-            android:exported="true">
-
-        </activity>
+            android:exported="true" />
         <activity
             android:name=".home.MainActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".topup.BulkTopupDetails"
             android:exported="false" />
@@ -84,12 +88,15 @@
             android:exported="false" />
         <activity
             android:name=".fundtransfer.FundTransferActivity"
-            android:exported="true" />
-        <activity
-            android:name=".fundTransfer.FundTransferActivity"
             android:exported="true"
             android:label="@string/title_activity_fund_transfer"
-            android:theme="@style/Theme.Sendmoney.NoActionBar" />
+            android:theme="@style/Theme.Sendmoney.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".smoney.SendMoneySuccess"
             android:exported="false" />
@@ -106,15 +113,7 @@
             android:name=".HomeActivity"
             android:exported="true"
             android:label="@string/title_activity_home"
-            android:theme="@style/Theme.Sendmoney" >
-
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-
-        </activity>
+            android:theme="@style/Theme.Sendmoney" />
         <activity
             android:name=".MainActivity"
             android:exported="true"
