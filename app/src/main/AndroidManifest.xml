@@ -16,6 +16,9 @@
         android:theme="@style/Theme.Sendmoney"
         tools:targetApi="31">
         <activity
+            android:name=".newRegistration.MerchantRegistrationActivity"
+            android:exported="false" />
+        <activity
             android:name=".fundtransfer.MfsSuccessActivity"
             android:exported="false" />
         <activity

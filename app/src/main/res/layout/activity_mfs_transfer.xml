@@ -26,21 +26,21 @@
                 android:layout_width="match_parent"
                 android:layout_height="?attr/actionBarSize"
                 android:background="@color/white"
-                app:titleTextColor="@color/black"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
                 app:title="ফান্ড ট্রান্সফার"
-                app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+                app:titleTextColor="@color/black" />
 
             <com.google.android.material.divider.MaterialDivider
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
-                app:dividerColor="@color/customGreyDeep"/>
+                app:dividerColor="@color/customGreyDeep" />
 
         </com.google.android.material.appbar.AppBarLayout>
 
         <View
             android:layout_width="match_parent"
             android:layout_height="@dimen/_2sdp"
-            android:background="@color/backgroundColor"/>
+            android:background="@color/backgroundColor" />
 
 
         <LinearLayout
@@ -52,11 +52,11 @@
             <LinearLayout
                 android:id="@+id/bankToShebaPay"
                 android:layout_width="match_parent"
-                android:layout_marginLeft="@dimen/_14sdp"
-                android:layout_marginRight="@dimen/_14sdp"
-                android:layout_marginTop="@dimen/_8sdp"
-                android:layout_marginBottom="@dimen/_8sdp"
                 android:layout_height="@dimen/_50sdp"
+                android:layout_marginLeft="@dimen/_14sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginRight="@dimen/_14sdp"
+                android:layout_marginBottom="@dimen/_8sdp"
                 android:background="@drawable/saved_bank_shape">
 
 
@@ -94,7 +94,6 @@
                     </LinearLayout>
 
 
-
                 </LinearLayout>
 
 
@@ -106,7 +105,7 @@
         <View
             android:layout_width="match_parent"
             android:layout_height="@dimen/_5sdp"
-            android:background="@color/backgroundColor"/>
+            android:background="@color/backgroundColor" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -142,8 +141,7 @@
 
             <View
                 android:layout_width="match_parent"
-                android:layout_height="@dimen/_5sdp"
-                />
+                android:layout_height="@dimen/_5sdp" />
 
             <com.google.android.material.textfield.TextInputLayout
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
@@ -174,17 +172,15 @@
 
             <View
                 android:layout_width="match_parent"
-                android:layout_height="@dimen/_5sdp"
-                />
+                android:layout_height="@dimen/_5sdp" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="বর্তমান ব্যালান্স : ৳ 0.00"
                 android:layout_marginLeft="@dimen/_13sdp"
                 android:layout_marginTop="@dimen/_8sdp"
-                android:layout_marginBottom="@dimen/_13sdp"/>
-
+                android:layout_marginBottom="@dimen/_13sdp"
+                android:text="বর্তমান ব্যালান্স : ৳ 0.00" />
 
 
             <LinearLayout

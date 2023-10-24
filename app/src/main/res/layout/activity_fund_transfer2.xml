@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -21,9 +21,9 @@
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
             android:background="@color/white"
-            app:titleTextColor="@color/black"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
             app:title="ফান্ড ট্রান্সফার"
-            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+            app:titleTextColor="@color/black" />
 
         <com.google.android.material.tabs.TabLayout
             android:id="@+id/tabs"
@@ -31,8 +31,8 @@
             android:layout_height="wrap_content"
             app:tabBackground="@color/white"
             app:tabGravity="fill"
-            app:tabMode="fixed"
             app:tabIndicatorColor="@color/primaryColor"
+            app:tabMode="fixed"
             app:tabTextColor="@color/primaryColor" />
     </com.google.android.material.appbar.AppBarLayout>
 
