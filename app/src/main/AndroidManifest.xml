@@ -16,7 +16,7 @@
         android:theme="@style/Theme.Sendmoney"
         tools:targetApi="31">
         <activity
-            android:name=".newRegistration.MerchantRegistrationActivity"
+            android:name=".newRegistration.MerchantRegistrationDoneActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -24,6 +24,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
 
+        </activity>
+        <activity
+            android:name=".newRegistration.MerchantRegistrationActivity"
+            android:exported="true">
         </activity>
         <activity
             android:name=".fundtransfer.MfsSuccessActivity"
@@ -100,8 +104,7 @@
             android:name=".fundtransfer.FundTransferActivity"
             android:exported="true"
             android:label="@string/title_activity_fund_transfer"
-            android:theme="@style/Theme.Sendmoney.NoActionBar">
-        </activity>
+            android:theme="@style/Theme.Sendmoney.NoActionBar"></activity>
         <activity
             android:name=".smoney.SendMoneySuccess"
             android:exported="false" />

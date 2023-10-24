@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".newRegistration.MerchantRegistrationDoneActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_25sdp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_110sdp"
+            android:src="@drawable/reg_done" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_25sdp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_18sdp"
+            android:text="আপনার মার্চেন্ট রেজিস্ট্রেশন সম্পন্ন হয়েছে!"
+            android:textAlignment="center"
+            android:textSize="@dimen/_18sdp" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_18sdp"
+            android:layout_marginRight="@dimen/_18sdp"
+            android:layout_marginBottom="@dimen/_18sdp"
+            android:text="পরবর্তীতে ওয়ালেট রেজিস্ট্রেশন সম্পন্ন করতে নিম্নে উল্লিখিত কাগজপত্র প্রয়োজন"
+            android:textAlignment="center"
+            android:textSize="@dimen/_12sdp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_18sdp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="@dimen/_7sdp"
+                android:gravity="center"
+                android:text="•"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="এনআইডি কার্ড " />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_18sdp"
+            android:layout_marginRight="@dimen/_18sdp"
+            android:layout_marginBottom="@dimen/_18sdp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="@dimen/_7sdp"
+                android:gravity="center"
+                android:text="•"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ট্রেড লাইসেন্স (যদি থাকে)" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_18sdp"
+            android:layout_marginRight="@dimen/_18sdp"
+            android:layout_marginBottom="@dimen/_18sdp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="@dimen/_7sdp"
+                android:gravity="center"
+                android:text="•"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="অনলাইন স্টোরের DBID নাম্বার (যদি থাকে)" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_18sdp"
+            android:layout_marginRight="@dimen/_18sdp"
+            android:layout_marginBottom="@dimen/_18sdp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="@dimen/_7sdp"
+                android:gravity="center"
+                android:text="•"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="সিম মালিকানার প্রমাণ" />
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_20sdp" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_70sdp"
+            android:layout_marginLeft="@dimen/_18sdp"
+            android:layout_marginRight="@dimen/_18sdp"
+            app:cardBackgroundColor="#F2F4F7"
+            android:elevation="0dp"
+            app:cardCornerRadius="@dimen/_8sdp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:padding="@dimen/_10sdp">
+
+                <ImageView
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:src="@drawable/alert_icon" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="উল্লেখিত মোবাইল নম্বরটি আপনার এনআইডি কার্ড দিয়ে রেজিস্টার্ড হতে হবে"
+                    android:textColor="#DE1F27" />
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_20sdp" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_margin="@dimen/_17sdp"
+            app:cardBackgroundColor="#4EA776"
+            android:elevation="0dp"
+            app:cardCornerRadius="10dp">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:text="পরবর্তী" />
+
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+
+</ScrollView>
