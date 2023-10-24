@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="bebsa">
+        <item>ব্যবসা</item>
+        <item>চাকুরী </item>
+        <item>অন্যান্য </item>
+
+    </string-array>
+
+    <string-array name="bebsarDoron">
+        <item> মুদির দোকান</item>
+        <item>চাকুরী </item>
+        <item>অন্যান্য </item>
+
+    </string-array>
+
+    <string-array name="bibagh">
+        <item> Dhaka</item>
+        <item>Chittagong </item>
+        <item>Rajshahi </item>
+
+    </string-array>
+
+    <string-array name="district">
+        <item> Cumilla</item>
+        <item>Noakhali </item>
+        <item>Feni </item>
+
+    </string-array>
+
+    <string-array name="thana">
+        <item> Laksam</item>
+        <item>Monohorgonj </item>
+        <item>Barua </item>
+
+    </string-array>
+
+
+    <string-array name="businessType">
+        <item>Agent</item>
+        <item>Super Agent </item>
+        <item>Shop </item>
+
+    </string-array>
+
+
+</resources>
