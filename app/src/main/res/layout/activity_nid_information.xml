@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".newRegistration.kyc.NidInformationActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/_12sdp"
+        android:layout_marginRight="@dimen/_12sdp"
+        android:orientation="vertical">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/app_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_8sdp"
+            android:background="#FFFFFF"
+            android:imeOptions="actionDone"
+            android:textColor="#4a4a4a"
+            app:errorEnabled="true">
+
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:titleTextColor="#4a4a4a">
+
+            </androidx.appcompat.widget.Toolbar>
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ব্যক্তিগত তথ্য"
+            android:textAlignment="center"
+            android:textSize="@dimen/_18sdp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="@dimen/_5sdp">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="NID No."
+                android:textColor="#878CA8"
+                android:textSize="@dimen/_10sdp" />
+
+
+            <TextView
+                android:id="@+id/nidNoTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="236 630 4331"
+                android:background="@android:color/transparent"
+                />
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_15sdp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="@dimen/_5sdp">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="আবেদনকারীর নাম"
+                android:textColor="#878CA8"
+                android:textSize="@dimen/_10sdp" />
+
+
+            <TextView
+                android:id="@+id/nidNameTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="আরিফ হাসান"
+                android:background="@android:color/transparent"
+                />
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_15sdp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="@dimen/_5sdp">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="মাতার নাম (ইংরেজি)"
+                android:textColor="#878CA8"
+                android:textSize="@dimen/_10sdp" />
+
+
+            <TextView
+                android:id="@+id/nidMotherNameTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Amena Begum"
+                android:background="@android:color/transparent"
+                />
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_15sdp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="@dimen/_5sdp">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="পিতার নাম (ইংরেজি)"
+                android:textColor="#878CA8"
+                android:textSize="@dimen/_10sdp" />
+
+
+            <TextView
+                android:id="@+id/nidFatherNameTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Abdullah Hasan"
+                android:background="@android:color/transparent"
+                />
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_15sdp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="@dimen/_5sdp">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="জন্ম তারিখ"
+                android:textColor="#878CA8"
+                android:textSize="@dimen/_10sdp" />
+
+
+            <TextView
+                android:id="@+id/nidDOBTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="১৪-০৭-১৯৯০"
+                android:background="@android:color/transparent"
+                />
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_15sdp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="@dimen/_5sdp">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="লিঙ্গ "
+                android:textColor="#878CA8"
+                android:textSize="@dimen/_10sdp" />
+
+
+            <TextView
+                android:id="@+id/nidGenderTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="পুরুষ"
+                android:background="@android:color/transparent"
+                />
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_15sdp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="@dimen/_5sdp">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="বর্তমান ঠিকানা (ইংরেজি) "
+                android:textColor="#878CA8"
+                android:textSize="@dimen/_10sdp" />
+
+
+            <TextView
+                android:id="@+id/nidCurrentAddressTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="76/4, Dhanmondi 06, Dhaka-1209"
+                android:background="@android:color/transparent"
+                />
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_15sdp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="@dimen/_5sdp">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="স্থায়ী ঠিকানা (ইংরেজি)"
+                android:textColor="#878CA8"
+                android:textSize="@dimen/_10sdp" />
+
+
+            <TextView
+                android:id="@+id/nidPermanantAddressTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="76/4, Dhanmondi 06, Dhaka-1209"
+                android:background="@android:color/transparent"
+                />
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_15sdp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="@dimen/_5sdp">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="রক্তের গ্রুপ"
+                android:textColor="#878CA8"
+                android:textSize="@dimen/_10sdp" />
+
+
+            <TextView
+                android:id="@+id/nidBloodGroupTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="A+"
+                android:background="@android:color/transparent"
+                />
+
+
+        </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/nextStepCard"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_margin="@dimen/_17sdp"
+            android:elevation="0dp"
+            app:cardBackgroundColor="#4EA776"
+            app:cardCornerRadius="10dp">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="পরবর্তী"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</ScrollView>

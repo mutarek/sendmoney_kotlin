@@ -11,4 +11,5 @@
     <color name="backgroundColor">#F2F2F2</color>
     <color name="gp_color">#F4F4F4</color>
     <color name="rb_color">#F8FCFF</color>
+    <color name="dismiss">#4EA776</color>
 </resources>

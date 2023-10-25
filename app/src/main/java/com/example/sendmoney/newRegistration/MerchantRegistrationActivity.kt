@@ -33,9 +33,24 @@ class MerchantRegistrationActivity : AppCompatActivity() {
         districtSpinner()
         thanaSpinner()
         initBusinessTypeSpinner()
+        setToolBar()
 
     }
 
+    private fun setToolBar() {
+        try {
+            setSupportActionBar(binding.toolbar)
+            supportActionBar?.setDisplayHomeAsUpEnabled(true)
+            supportActionBar?.setDisplayShowHomeEnabled(true)
+            supportActionBar?.title = "মার্চেন্ট রেজিস্ট্রেশন প্রক্রিয়াধীন"
+            binding.toolbar.setNavigationOnClickListener {
+                onBackPressed();
+            }
+
+        } catch (e: Exception) {
+            e.printStackTrace()
+        }
+    }
     private fun initBusinessTypeSpinner() {
 
         var adapter = CustomSpinnerAdapter(this@MerchantRegistrationActivity, setData())

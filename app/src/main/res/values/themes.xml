@@ -15,4 +15,9 @@
     <style name="Theme.Sendmoney.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="Theme.Sendmoney.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="animation">
+        <item name="android:windowEnterAnimation">@android:anim/fade_in</item>
+        <item name="android:windowExitAnimation">@android:anim/fade_out</item>
+    </style>
 </resources>

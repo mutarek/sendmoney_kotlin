@@ -147,8 +147,8 @@
             android:layout_height="@dimen/_70sdp"
             android:layout_marginLeft="@dimen/_18sdp"
             android:layout_marginRight="@dimen/_18sdp"
-            app:cardBackgroundColor="#F2F4F7"
             android:elevation="0dp"
+            app:cardBackgroundColor="#F2F4F7"
             app:cardCornerRadius="@dimen/_8sdp">
 
 
@@ -185,19 +185,19 @@
             android:layout_width="match_parent"
             android:layout_height="@dimen/_45sdp"
             android:layout_margin="@dimen/_17sdp"
-            app:cardBackgroundColor="#4EA776"
             android:elevation="0dp"
+            app:cardBackgroundColor="#4EA776"
             app:cardCornerRadius="10dp">
 
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="center"
                 android:layout_gravity="center"
+                android:gravity="center"
+                android:text="পরবর্তী"
                 android:textColor="@color/white"
-                android:textSize="20sp"
-                android:text="পরবর্তী" />
+                android:textSize="20sp" />
 
         </androidx.cardview.widget.CardView>
 
