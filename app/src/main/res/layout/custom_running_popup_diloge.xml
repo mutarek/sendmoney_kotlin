@@ -20,23 +20,23 @@
             android:layout_width="@dimen/_50sdp"
             android:layout_height="@dimen/_50sdp"
             android:layout_gravity="center"
-            android:src="@drawable/checkgreen" />
+            android:src="@drawable/report_problem" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="অভিনন্দন!"
+            android:text="দুঃখিত!"
             android:textAlignment="center"
             android:textSize="@dimen/_22sdp" />
 
         <View
             android:layout_width="match_parent"
-            android:layout_height="@dimen/_20sdp" />
+            android:layout_height="@dimen/_25sdp" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="আপনার এনআইডি ভেরিফিকেশন সফল হয়েছে"
+            android:text="আপনার এনআইডি দিয়ে উল্লেখিত মোবাইল নম্বর রেজিস্টার্ড নয়"
             android:textAlignment="center"
             android:textSize="@dimen/_14sdp" />
 
@@ -54,7 +54,7 @@
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
                 android:gravity="center"
-                android:text="পরবর্তী"
+                android:text="আরেকবার করুন"
                 android:textColor="@color/white"
                 android:textSize="@dimen/_14sdp" />
 

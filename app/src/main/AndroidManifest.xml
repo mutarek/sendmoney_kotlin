@@ -24,6 +24,12 @@
         android:theme="@style/Theme.Sendmoney"
         tools:targetApi="31">
         <activity
+            android:name=".newRegistration.kyc.MarchentAccSuccessActivity"
+            android:exported="false" />
+        <activity
+            android:name=".newRegistration.kyc.PhotoVerificationActivity"
+            android:exported="false" />
+        <activity
             android:name=".newRegistration.kyc.NidInformationActivity"
             android:exported="false" />
         <activity

@@ -4,41 +4,40 @@ import android.app.Dialog
 import android.content.Intent
 import android.graphics.Color
 import android.graphics.drawable.ColorDrawable
+import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.ViewGroup
-import androidx.appcompat.app.AppCompatActivity
 import androidx.cardview.widget.CardView
 import com.example.sendmoney.R
-import com.example.sendmoney.databinding.ActivityNidInformationBinding
-import com.saadahmedsoft.popupdialog.PopupDialog
-import com.saadahmedsoft.popupdialog.Styles
-import com.saadahmedsoft.popupdialog.listener.OnDialogButtonClickListener
+import com.example.sendmoney.databinding.ActivityPhotoVerificationBinding
 
-
-class NidInformationActivity : AppCompatActivity() {
-    private lateinit var binding: ActivityNidInformationBinding
+class PhotoVerificationActivity : AppCompatActivity() {
+    private lateinit var binding: ActivityPhotoVerificationBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityNidInformationBinding.inflate(layoutInflater)
+        binding = ActivityPhotoVerificationBinding.inflate(layoutInflater)
         setContentView(binding.root)
         setToolBar()
-
-        binding.nextStepCard.setOnClickListener {
+        binding.howToTakePhotos.setOnClickListener {
             var dialog = Dialog(this)
-            dialog.setContentView(R.layout.custom_popup_diloge);
+            dialog.setContentView(R.layout.kivave_chobi_tulben_dialoge);
             dialog.getWindow()?.setLayout(
                 ViewGroup.LayoutParams.MATCH_PARENT,
                 ViewGroup.LayoutParams.WRAP_CONTENT
-            );
-            dialog.setCancelable(false);
+            )
+            dialog.setCancelable(true)
             dialog.window?.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
             dialog.getWindow()?.getAttributes()?.windowAnimations = R.style.animation;
-            var button = dialog.findViewById<CardView>(R.id.nextBTN)
-            button.setOnClickListener {
-                startActivity(Intent(this,PhotoVerificationActivity::class.java))
-                dialog.dismiss()
-            }
-            dialog.show();
+//            var button = dialog.findViewById<CardView>(R.id.nextBTN)
+//            button.setOnClickListener {
+//                startActivity(Intent(this,PhotoVerificationActivity::class.java))
+//                dialog.dismiss()
+//            }
+            dialog.show()
+        }
+
+        binding.nextStepCard.setOnClickListener {
+            startActivity(Intent(this, MarchentAccSuccessActivity::class.java))
         }
     }
 
