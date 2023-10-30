@@ -6,6 +6,7 @@ import android.os.CountDownTimer
 import android.view.View
 import android.view.animation.Animation
 import android.view.animation.AnimationUtils
+import android.widget.Toast
 import com.example.sendmoney.R
 import com.example.sendmoney.databinding.ActivityMarchentAccSuccessBinding
 
@@ -71,6 +72,23 @@ class MarchentAccSuccessActivity : AppCompatActivity() {
 
             }
         }
+
+        var result = convertToBanglaNumber("Tarek")
+        Toast.makeText(this, result, Toast.LENGTH_SHORT).show()
+    }
+
+    fun convertToBanglaNumber(input: String): String {
+        val banglaDigits = listOf("০", "১", "২", "৩", "৪", "৫", "৬", "৭", "৮", "৯")
+        val result = StringBuilder()
+        for (char in input) {
+            if (char.isDigit()) {
+                val digit = char.toString().toInt()
+                result.append(banglaDigits[digit])
+            } else {
+                result.append(char)
+            }
+        }
+        return result.toString()
     }
 
     private fun setToolBar() {
