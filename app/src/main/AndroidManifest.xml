@@ -24,6 +24,24 @@
         android:theme="@style/Theme.Sendmoney"
         tools:targetApi="31">
         <activity
+            android:name=".newRegistration.InformationProcessingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".newRegistration.RecordSofolHoyeceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".newRegistration.SimOwnershipActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".newRegistration.BusinessInformationActivity"
+            android:exported="true" />
+        <activity
             android:name=".newRegistration.kyc.MarchentAccSuccessActivity"
             android:exported="false" />
         <activity
@@ -51,13 +69,7 @@
             android:exported="false" />
         <activity
             android:name=".newRegistration.kyc.ShebaUserPackageActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:exported="true" />
         <activity
             android:name=".newRegistration.MerchantRegistrationDoneActivity"
             android:exported="true" />
